@@ -1,0 +1,450 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+:root {
+    --button-red-color: #500000;
+    --primary-dark-color: #F4D7D7;
+    --primary-inbetween-color: #F4E6D7;
+    --primary-light-color: #F4F4D7;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    margin: 0;
+}
+
+h1 {
+    font-family: "Lato", sans-serif;
+    margin: 0;
+    font-size: 4rem;
+    font-weight: 900;
+    font-style: italic;
+}
+
+h2 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+h3 {
+    margin: 0;
+    font-size: 1.75rem;
+}
+
+h4 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+p {
+    margin: 0;
+}
+
+.background-light {
+    background-color: var(--primary-light-color);
+}
+
+.background-inbetween {
+    background-color: var(--primary-inbetween-color);
+}
+
+.background-dark {
+    background-color: var(--primary-dark-color);
+}
+
+.header-button {
+    background-color: var(--primary-dark-color);
+    border: 2px solid var(--primary-dark-color);
+    border-radius: 10px;
+    font-size: large;
+    color: var(--button-red-color);
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 10vh;
+    padding: 20px 5vw;
+}
+
+nav img {
+    object-fit: cover;
+}
+
+nav div {
+    display: flex;
+    gap: 10px;
+}
+
+nav a {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.button {
+    border: 2px solid black;
+    border-radius: 10px;
+    border-color: var(--primary-light-color);
+    background-color: var(--primary-inbetween-color);
+    color: var(--button-red-color);
+    text-decoration: none;
+}
+
+.button:hover {
+    background-color: var(--button-red-color);
+    color: var(--primary-inbetween-color);
+    transition: all 0.2s ease;
+}
+
+.center-container {
+    width: 100vw;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    overflow: auto;
+}
+
+.header-index {
+    min-height: 100vh;
+    background-image: url(../images/King-Gizzard-and-the-Lizard-Wizard-photo-by-Jason-Galea.jpg);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.header-contact {
+    min-height: 40vh;
+}
+
+header h1 {
+    flex: 2;
+    align-content: center;
+    color: green;
+    text-shadow: 2px 2px rgb(17, 82, 6);
+}
+
+.header-contact h1 {
+    color: black;
+    text-shadow: none;
+}
+
+.header-container {
+    flex: 1;
+    padding: 0 10vw;
+    align-content: center;
+}
+
+header p {
+    background-color: var(--primary-inbetween-color);
+    border-radius: 15px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.button-div {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.section-album-cards {
+    display: flex;
+    flex-direction: column;
+    padding: 50px 10vw;
+    gap: 20px;
+}
+
+.album-cards-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2vw;
+}
+
+.album-card {
+    display: flex;
+    flex-direction: column;
+    width: 20vw;
+    flex: 0 0 18vw;
+    overflow: hidden;
+    text-align: center;
+    border: 2px solid #6037E6;
+    border-radius: 15px;
+    object-fit: cover;
+    background-color: white;
+    transition: all 0.5s ease;
+}
+
+.album-card div {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    flex-basis: auto;
+}
+
+.img-container {
+    object-fit: cover;
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+    padding: 0;
+}
+
+.album-card img {
+    object-fit: cover;
+    border-bottom: 2px solid #6037E6;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: all 0.5s ease;
+}
+
+.album-card:hover {
+    box-shadow: 5px 5px rgb(0 0 0 / 0.4);
+}
+
+.album-card:hover img {
+    transform: scale(1.1);
+}
+
+.album-card-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    text-align: left;
+    padding: 10px;
+    height: fit-content;
+}
+
+.section-quote {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 40vh;
+    animation: burningsection 5s infinite;
+    animation-direction: alternate;
+}
+
+@keyframes burningsection {
+    from {
+        background-color: var(--primary-inbetween-color);
+    }
+    to {
+        background-color: red;
+    }
+}
+
+.song-text {
+    width: 80vw;
+    text-align: center;
+    font-size: 200%;
+}
+
+.section-band-info {
+    display: flex;
+    padding: 50px 10vw;
+    gap: 20px;
+    align-items: center;
+}
+
+.band-info-text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 40vw;
+
+}
+
+.section-band-info img {
+    object-fit: cover;
+    object-position: center;
+    width: 40vw;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 0 10vh 0;
+}
+
+form input {
+    padding: 10px 0 10px 10px;
+    width: 100%;
+}
+
+.form-title {
+    text-align: center;
+    padding: 10vh 0 5vh 0;
+}
+
+.form-names {
+    display: flex;
+    flex: 1;
+}
+
+.form-names-first-name {
+    width: 40vw;
+}
+
+.form-names-first-name input {
+    width: calc(40vw - 30px);
+}
+
+.form-names-last-name {
+    width: 40vw;
+}
+
+.form-names-last-name input {
+    width: calc(40vw - 10px);
+}
+
+.form-email {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-email input {
+    width: calc(80vw - 10px);
+}
+
+.form-personal-information {
+    display: flex;
+    flex: 1;
+}
+
+.form-residence {
+    width: 50%;
+}
+
+.form-residence input {
+    width: calc(40vw - 30px);
+}
+
+.form-birthdate {
+    width: 50%;
+}
+
+.form-birthdate input {
+    width: calc(40vw - 10px);
+}
+
+.form-subject {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-subject select {
+    background-color: white;
+    border: 1px solid gray;
+    padding: 10px;
+}
+
+.form-message textarea {
+    width: 80vw;
+    height: 15vh;
+}
+
+.form-newsletter {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-newsletter-answers {
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.form-newsletter input {
+    width: 20px;
+}
+
+.form-terms-conditions {
+    display: flex;
+}
+
+.form-terms-conditions input {
+    width: 20px;
+}
+
+form button {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--primary-inbetween-color);
+    border: none;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 15vh;
+    padding: 40px 10vw;
+}
+
+.footer-left {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-left img {
+    object-fit: contain;
+    height: 12vh;
+}
+
+.footer-right {
+    display: flex;
+    gap: 10px;
+    align-self: flex-end;
+}
+
+footer .button {
+    padding: 10px;
+    background-color: var(--primary-dark-color);
+}
+
+@media (width <= 480px) {
+
+.album-cards-container {
+    flex-direction: column;
+}
+
+.album-card {
+    width: 80vw;
+    height: 80vh;
+    overflow: visible;
+}
+
+.section-quote {
+    padding: 5vh 0;
+    height: fit-content;
+}
+
+.section-band-info {
+    flex-direction: column;
+}
+
+.band-info-text {
+    width: 80vw;
+}
+
+.section-band-info img {
+    width: 80vw;
+}
+
+footer {
+    height: fit-content;
+    flex-direction: column;
+    gap: 20px;
+}
+
+}
